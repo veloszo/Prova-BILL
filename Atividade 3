@@ -1,1 +1,27 @@
+#include <stdio.h>
 
+int main()
+{
+int dia,mes,ano;
+int a,b,c,d,e,resultado;
+    printf("Digite o dia do seu aniversario: ");
+    scanf("%d",&dia);
+    printf("\nDigite o mes do seu aniversario: ");
+    scanf("%d",&mes);
+    printf("\nDigite o ano do seu aniversario: ");
+    scanf("%d",&ano);
+a = (dia*100)+mes;
+b = a + ano;
+c = b/100;
+d = b%100;
+e = c + d;
+resultado = e%5;
+    switch(resultado)
+    {
+    case 0:printf("Você é timido!");break;
+    case 1:printf("Você é um Sonhador");break;
+    case 2:printf("Você é Paquerador");break;
+    case 3:printf("Você é Atraente");break;
+    case 4:printf("Você é Irresistivel");break;
+    }
+}
