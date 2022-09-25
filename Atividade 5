@@ -1,1 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
+int main() {
+    struct u {
+    char n[100];
+    char e[100];
+    char t[100];
+    } ;
+
+    int tn, te, tt;
+
+    struct u pessoa;
+    printf("Digite seu nome: ");
+    gets(pessoa.n);
+    printf("Digite seu email: ");
+    gets(pessoa.e);
+    printf("Digite seu telefone: ");
+    gets(pessoa.t);
+
+    tn = strlen(pessoa.n);
+    te = strlen(pessoa.e);
+    tt = strlen(pessoa.t);
+
+    printf("Nome: %d digitos\n", tn);
+    printf("Email: %d digitos\n", te);
+    printf("Telefone: %d digitos\n", tt);
+ 
+}
